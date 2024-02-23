@@ -13,6 +13,8 @@ const handler = {
         if(target[prop] === 'Elvin') {
             target[prop] = target[prop].split("").reverse().join("")
         }
+
+        if(target[prop] === 'Murad') throw new Error("No Murad any more!")
         return target[prop]
     },
 
